@@ -1,4 +1,3 @@
-import { NavigateToPost } from "../../../features/NavigateTo";
 import { useGetPostsQuery } from "../../../shared/api/postApi";
 import { Loader } from "../../../shared/ui";
 import { ListItem, VirtualList } from "../../../entities/List";
@@ -24,11 +23,7 @@ export const PostsList = ({ classNames }: PostsListProps) => {
 
   return (
     <VirtualList items={data}>
-      {({ id, title, body }) => (
-        <NavigateToPost id={id}>
-          <ListItem id={id} title={title} body={body} />
-        </NavigateToPost>
-      )}
+      {({ id, title, body }) => <ListItem id={id} title={title} body={body} />}
     </VirtualList>
   );
 };

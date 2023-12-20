@@ -6,11 +6,11 @@
   overflow-x: hidden;
 }
 .container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 .item {
   display: flex;
   width: 100%;
-  position: absolute;
-  top: 0;
 }
