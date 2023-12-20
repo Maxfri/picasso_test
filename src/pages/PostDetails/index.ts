@@ -1,0 +1,1 @@
+export { PostDetailsLazy as PostDetails } from "./ui/PostDetails.lazy";
